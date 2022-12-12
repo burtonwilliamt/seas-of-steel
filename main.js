@@ -3,14 +3,13 @@ Learn how to use Hexi to build a simple game prototype
 */
 
 //Create a new Hexi instance, and start it
-let g = hexi(512, 512, setup, ["sounds/chimes.wav"]);
+let g = hexi(512, 512, setup);
 
 //Set the background color and scale the canvas
 g.backgroundColor = "#5883c4";
 g.scaleToWindow();
 
 //Start Hexi
-g.start();
 
 //Declare your global variables (global to this game, which means you
 //want to use them in more than one function)
@@ -198,4 +197,5 @@ function end() {
 
 }
 
+g.start();
 
